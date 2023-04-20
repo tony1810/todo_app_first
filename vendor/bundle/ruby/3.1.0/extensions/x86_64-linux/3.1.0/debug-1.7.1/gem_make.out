@@ -1,0 +1,16 @@
+current directory: /home/tony/work/todo_app_first/vendor/bundle/ruby/3.1.0/gems/debug-1.7.1/ext/debug
+/home/tony/.rbenv/versions/3.1.2/bin/ruby -I /home/tony/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20230414-4756-f1l7zs.rb extconf.rb
+creating Makefile
+
+current directory: /home/tony/work/todo_app_first/vendor/bundle/ruby/3.1.0/gems/debug-1.7.1/ext/debug
+make DESTDIR\= clean
+
+current directory: /home/tony/work/todo_app_first/vendor/bundle/ruby/3.1.0/gems/debug-1.7.1/ext/debug
+make DESTDIR\=
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/tony/work/todo_app_first/vendor/bundle/ruby/3.1.0/gems/debug-1.7.1/ext/debug
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20230414-4756-p13rvl/debug

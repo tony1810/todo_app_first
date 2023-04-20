@@ -1,0 +1,30 @@
+.usernew {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .usernew input[type="text"],
+  .usernew input[type="email"],
+  .usernew input[type="password"],
+  .usernew input[type="submit"] {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 2px #ccc;
+  }
+  
+  .usernew input[type="submit"] {
+    background-color: #191a1b;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .usernew input[type="submit"]:hover {
+    background-color: #2f3133;
+  }
+  

@@ -11,6 +11,24 @@
   </head>
 
   <body>
+    <header>
+    <div class = "header-menuns">
+      <h2>
+        todo list
+      </h2>
+      <div class = "logout">
+        <%if @current_user %>
+          <%=link_to("logout" , "/logout" ,data: {"turbo-method": :post })%>
+          <%=@tatal_done %>
+        <% else %>
+          <%=link_to("top" , "/" )%>
+        <% end %>
+      </div>
+    </div>
+    </header>
+      
+            
+
     <%= yield %>
   </body>
 </html>

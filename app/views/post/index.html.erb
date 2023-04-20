@@ -1,5 +1,25 @@
-<h1> 追加</h1>
 
-    
-        <input type = "text">
-        <input type ="submit" value = "追加">
+
+<div class = "main_todo">
+        <div class ="error_massages">
+            <%if flash[:notice] %>
+                <%=flash[:notice] %>
+            <% end %>
+        </div>
+        <div class = "add_task">
+                <%=form_tag("/posts/create") do%>
+                        <h1> add　　　　　　　　　total :<%=@user.total_done %>  </h1>
+                        <input name = "task" type = "text">
+                        <input type ="submit" value = "add">
+                <% end %>
+        </div>
+        <div class = "task_show">
+                <%@tasks.each do |task| %>
+                        <ul>
+                               <li> <%=task.task%>  <%= link_to("done", "/posts/#{task.id}/destroy", data: { "turbo-method": :post }) %>  </li>
+                               
+                        </ul>
+
+                <% end %>
+        </div>
+</div>

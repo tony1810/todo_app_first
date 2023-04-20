@@ -1,0 +1,16 @@
+<div class = usernew>
+    <div class ="error_massages">
+        <%if flash[:notice] %>
+            <%=flash[:notice] %>
+        <% end %>
+    </div>
+    <%= form_tag("/users/create") do%>
+        <p>ユーザーネーム</p>
+        <input name = "name">
+        <p>メールアドレス</p>
+        <input name = "email" >
+        <p>パスワード</p>
+        <input name = "password" type = "password">
+        <input type ="submit" value = "登録">
+    <% end %>
+</div>

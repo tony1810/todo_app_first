@@ -1,6 +1,18 @@
-<h1>
-    todoアプリ
-</h1>
-<p>
-    投稿一覧
-</p>
+<div class = "todo_top" > 
+    <div class = "login_form">
+        <div class ="error_massages">
+            <%if flash[:notice] %>
+                <%=flash[:notice] %>
+            <% end %>
+        </div>
+        <%= form_tag("/login") do%>
+            <p>メールアドレス</p>
+            <input name = "email" >
+            <p>パスワード</p>
+            <input name = "password" type = "password">
+            <input type ="submit" value = "ログイン">
+            <%=link_to("新規登録" , "/users/new")%>
+        <% end %>
+    </div>
+</div>
+
